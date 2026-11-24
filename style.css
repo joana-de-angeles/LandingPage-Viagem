@@ -26,6 +26,12 @@ header img {
     width: 80px;
 }
 
+header span {
+    font-size: 24px;
+    font-weight: 500;
+    color: #173F2A;
+}
+
 
 header p {
     color: #173F2A;
@@ -41,7 +47,7 @@ header p {
 #banner{
     background-image: url(assets/banner.png);
     width: 100%;
-    height: 500px;
+    height: 30vw;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -52,6 +58,7 @@ header p {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    max-width: 630px;
     width: 60%;
     height: 100%;
     color: #fff;
@@ -102,20 +109,22 @@ span.line-title {
 
 .atracoes-container{
     display: flex;
-    direction: column;
     justify-content: space-between;
-    align-items: center;
+    align-items: stretch;
     gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .atracoes-box{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     background-color: #f1e8d0;
     border-radius: 16px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+     flex: 1;
 }
 
 .atracoes-box img{
@@ -129,12 +138,13 @@ span.line-title {
     align-items: flex-start;
     justify-content: flex-start;
     padding: 20px;
-    height: 150px;
+    width: 100%;
     
 }
 
 .atracoes-box-content h3 {
     font-size: 24px;
+    margin-bottom: 8px;
 }
 
 footer {
@@ -143,7 +153,6 @@ footer {
     align-items: center;
     gap: 10px;
     background-color: #d9e2c8;
-    
     padding: 20px 0;
     text-align: center;
 }
@@ -152,6 +161,11 @@ footer img  {
     width: 50px;
     
 }
+
+footer span {
+    font-weight: 500;
+}
+
 
 .line-footer {
     border: 1px solid #8DBB35;
